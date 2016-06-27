@@ -48,7 +48,7 @@
 # end
 
 require 'slim'
-require_relative "./lib/build_cleaner"
+require "lib/build_cleaner.rb"
 
 ###
 # Blog settings - Begin
