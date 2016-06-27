@@ -48,6 +48,7 @@
 # end
 
 require 'slim'
+require_relative "./lib/build_cleaner"
 
 ###
 # Blog settings - Begin
@@ -157,6 +158,8 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+  activate :build_cleaner
 
   activate :favicon_maker do |f|
     f.template_dir  = File.join(root, 'source')
