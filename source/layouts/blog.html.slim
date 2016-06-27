@@ -1,0 +1,20 @@
+= wrap_layout :layout do
+
+  div role="main"
+
+  = partial "partials/header"
+
+  .section.section__content--large
+    .wrapper
+      article.blog__article
+        p.blog__breadcrumb
+          => link_to "Blog SEO", "/blog/"
+          ' /
+          = link_to current_article.data.category, category_path(current_article.data.category)
+        p.blog__date
+          ' Publié le
+          = pretty_date(current_page.data.date)
+        p.blog__chapo = current_article.data.excerpt
+
+        == yield
+        = disqus

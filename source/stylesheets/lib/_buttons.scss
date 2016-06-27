@@ -1,0 +1,86 @@
+// ===========================================================================
+// Buttons
+// ===========================================================================
+
+$btn-default-font-size : 1em;
+$btn-padding-horizontal : 1em;
+$btn-padding-vertical : 0.5em;
+$btn-margin-bottom: 1.5em;
+$btn-background-color: #73b819;
+
+%btn{
+  display: inline-block;
+  margin-bottom: $btn-margin-bottom;
+  padding : $btn-padding-vertical $btn-padding-horizontal;
+  color: white;
+  font-family: $font-stack-sans;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  border-radius:$base-border-radius;
+  transition: background-color 300ms ease-out;
+
+  &:hover,
+  &:active{
+    color: white;
+  }
+
+  &:active{
+    transform: translateY(5px);
+  }
+}
+
+.btn__wrapper{
+  text-align: center;
+}
+
+.btn,
+button,
+input[type="submit"]{
+  @extend %btn;
+}
+
+.btn--large{
+  width: 100%;
+  line-height: 2em;
+}
+
+.btn--medium{
+  width: 50%;
+  line-height: 2em;
+}
+
+
+.btn--primary{
+  color: $color-primary;
+  font-size: $font-size-body;
+  border: em(2, $font-size-body) solid $color-primary;
+
+  &:hover, &:active{
+    color: white;
+    background-color: $color-primary;
+    box-shadow: $base-box-shadow;
+  }
+}
+
+.btn--secondary{
+  color: $btn-background-color;
+  font-size: $font-size-large;
+  border: em(4, $font-size-large) solid $btn-background-color;
+
+  &:hover{
+    background-color: $btn-background-color;
+    box-shadow: 0px em(2, $font-size-large) 0px darken($btn-background-color, 10%);
+  }
+}
+
+.btn--fill{
+  background-color: $btn-background-color;
+  font-size: $font-size-large;
+  box-shadow: 0px em(2, $font-size-large) 0px darken($btn-background-color, 10%);
+
+  &:hover{
+    background-color: darken($btn-background-color,10%);
+  }
+}

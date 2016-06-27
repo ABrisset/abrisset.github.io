@@ -1,0 +1,178 @@
+.section{
+  clear: both;
+  padding: 4.5em 0 3em 0;
+
+  &--big{
+    position: relative;
+    background-color: rgba(40, 50, 78, 0.5);
+    padding-top: 10em;
+    padding-bottom: 10em;
+    color: $color-hero-heading;
+  }
+
+  &--big--adwords:after{
+    content: "";
+    background-image: url("../images/backgrounds/small/google.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    @media screen and (min-width: 25em){
+      background-image: url("../images/backgrounds/medium/google.jpg");
+    }
+
+    @media screen and (min-width: 50em){
+      background-image: url("../images/backgrounds/google.jpg");
+    }
+  }
+
+  &--big--ruby:after{
+    content: "";
+    background-image: url("../images/backgrounds/small/iphone_6.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    @media screen and (min-width: 25em){
+      background-image: url("../images/backgrounds/medium/iphone_6.jpg");
+    }
+
+    @media screen and (min-width: 50em){
+      background-image: url("../images/backgrounds/iphone_6.jpg");
+    }
+  }
+
+  &--big--ninja:after{
+    content: "";
+    background-image: url("../images/backgrounds/small/134H.jpg");
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    @media screen and (min-width: 25em){
+      background-image: url("../images/backgrounds/medium/134H.jpg");
+    }
+
+    @media screen and (min-width: 50em){
+      background-image: url("../images/backgrounds/134H.jpg");
+    }
+  }
+
+  &__content,
+  &__img{
+    @include media($medium){
+      @include span-columns(6);
+    }
+  }
+
+  &__content--centered{
+    @include media($medium){
+      @include span-columns(6);
+      @include shift(3);
+    }
+    text-align: center;
+  }
+
+  &__content--large{
+    @include media($medium){
+      @include span-columns(8);
+      @include shift(2);
+    }
+  }
+
+  &__content--right{
+    text-align: right;
+    float: right
+  }
+
+  &--home{
+    display: table;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    text-align: center
+  }
+
+  &--home:after{
+    content: "";
+    background-image: url("../images/backgrounds/small/apple.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    @media screen and (min-width: 25em){
+      background-image: url("../images/backgrounds/medium/apple.jpg");
+    }
+
+    @media screen and (min-width: 50em){
+      background-image: url("../images/backgrounds/apple.jpg");
+    }
+  }
+
+  &__img{
+    display: block;
+    margin-top: 1.5em;
+    text-align: center;
+  }
+
+  &__link--bg{
+    @extend %white-radius;
+    color: $color-hero-heading;
+
+    &:hover{
+      color: $color-hero-heading;
+    }
+  }
+
+  &__title{
+    @extend %h-xxlarge;
+
+    &:after{
+      @include ornement(auto, auto, $color-primary);
+    }
+  }
+
+  &__title--bg--quote{
+    @extend %title-bg;
+  }
+
+  &__title--bg--left{
+    @extend %title-bg;
+
+    &:after{
+      @include ornement(0, auto, $color-hero-heading);
+    }
+  }
+
+  &__title--bg--right{
+    @extend %title-bg;
+
+    &:after{
+      @include ornement(auto, 0, $color-hero-heading);
+    }
+  }
+}

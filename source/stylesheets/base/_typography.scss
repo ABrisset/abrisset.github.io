@@ -1,0 +1,96 @@
+// ============================================================================
+// Typography
+// ============================================================================
+
+body {
+  color: $color-body;
+  background-color: #F5F5F5;
+
+  font-family: $font-stack-sans;
+  line-height: 1.5;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+
+// Generic styles for heading
+// ------------------------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+%h-giga,
+%h-big {
+  font-weight: $font-weight-bold;
+  color:  $color-primary;
+  margin: 0;
+}
+
+h1{
+  font-size: em($font-size-xxlarge);
+}
+
+h2{
+  padding:   em(35,$font-size-xlarge) 0 em(15,$font-size-xlarge) 0;
+  font-size: em($font-size-xlarge);
+  line-height: 1.25em;
+}
+
+h3{
+  padding:   em(24,$font-size-large) 0 em(13,$font-size-large) 0;
+  font-size: em($font-size-large);
+}
+
+h4{
+  font-size: em($font-size-medium);
+}
+
+// Special styles for heading
+// ------------------------------------
+%h-xxlarge{
+  padding: 0;
+  font-size:   em($font-size-xxlarge);
+  line-height: 1.5;
+}
+
+%h-xlarge{
+  padding: 0 0 em(4,$font-size-xlarge) 0;
+  font-size:   em($font-size-xlarge);
+  line-height: 1.25em;
+}
+
+
+// General styles
+// ------------------------------------
+p {
+  margin:  0 0 1.3333333333333333em 0; // em() fail
+  font-size: em($font-size-body);
+  line-height: 1.3333333333333333em;
+}
+
+ol,
+ul {
+  margin:  0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.1s linear;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken($color-link, 5%);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}

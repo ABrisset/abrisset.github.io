@@ -1,0 +1,21 @@
+doctype html
+html lang="fr"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width,initial-scale=1"
+    title = (defined?(category) ? category : current_page.data.title_seo) + data.settings.site.title_suffix
+    meta name="description" content="#{current_page.data.description}"
+    meta name="robots" content="index,follow"
+    meta name="google-site-verification" content="R7aPiADkUTnBNzbTvsqutfN3_gewIxUFwJpKYyc-hBQ"
+    = partial 'partials/favicon'
+    = stylesheet_link_tag 'application'
+    = stylesheet_link_tag '//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800'
+    = stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'
+    = yield_content :hero_image
+    = javascript_include_tag 'all'
+
+  body class="#{page_classes}"
+    = gtm(data.settings.google_analytics.gtm_id)
+    = partial "partials/navbar"
+    == yield
+    = partial "partials/footer"

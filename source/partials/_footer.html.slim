@@ -1,0 +1,24 @@
+footer.footer
+  div role="content-info"
+    ul.footer__content
+      li.footer__content__item
+        i.fa.fa-home>
+        | #{data.settings.author.address}
+      li.footer__content__item
+        i.fa.fa-phone>
+        | #{data.settings.author.phone}
+      li.footer__content__item
+        i.fa.fa-envelope>
+        => mail_to("#{data.settings.author.email}").html_safe
+    ul.footer__content--social
+        li.footer__content__item--social
+          = link_to("<i class='fa fa-twitter footer__icon'></i>", "#{data.settings.social.twitter}").html_safe
+        li.footer__content__item--social
+          = link_to("<i class='fa fa-github footer__icon'></i>", "#{data.settings.social.github}").html_safe
+        li.footer__content__item--social
+          = link_to("<i class='fa fa-google-plus footer__icon'></i>", "#{data.settings.social.google_plus}").html_safe
+    div.footer__copyright
+      '  &copy;
+      => Time.now.year
+      ' -
+      = link_to data.settings.author.name, "/"

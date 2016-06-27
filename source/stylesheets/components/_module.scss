@@ -1,0 +1,51 @@
+// ============================================================================
+// Module /mod
+// ============================================================================
+
+// Styles for the generic module
+// ------------------------------------
+.mod{
+  @extend %gallery;
+
+  @include media($small-to-medium){
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  @include media($medium){
+    @include span-columns(4);
+    @include omega(3n);
+  }
+
+  &__img{
+    margin-bottom: 1em;
+  }
+
+  &__img--rounded{
+    border-radius: 50%;
+  }
+
+  &__img--square{
+    border-radius: em(5);
+  }
+
+  &--large{
+    @extend %gallery;
+
+    @include media($small-to-medium){
+      @include span-columns(6);
+      @include omega(2n);
+    }
+
+    @include media($medium){
+      @include span-columns(3);
+      @include omega(4n);
+    }
+
+    img{
+      background: #fff;
+      width: 200px;
+    }
+  }
+}
+

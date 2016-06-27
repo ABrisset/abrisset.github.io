@@ -1,0 +1,26 @@
+/ Set the title
+- title = current_page.data.title if title.blank?
+
+/ Set the background image
+- content_for :hero_image do
+  - set_hero_image(current_page.data.hero_image)
+
+/ Check if it's the homepage
+- if current_page.url == '/'
+  section.section--home
+    header.header--home
+      .wrapper
+        h1.header--home__title.wow.fadeIn data-wow-delay="0.5s" data-wow-iteration="1"
+          = title
+        p.header__baseline.wow.fadeIn data-wow-delay="1s" data-wow-iteration="1"
+          = current_page.data.slogan
+      .header__bottom
+        = link_to("<i class='fa fa-chevron-down header__arrow'></i>", "#testimonial", :class => "wow fadeIn scroll", :'data-wow-delay' => '1.5s', :'data-wow-iteration' => '1', :'data-wow-duration' => '2s').html_safe
+- else
+  .header
+    .wrapper
+      h1.header__title = title
+      - if current_page.data.excerpt
+        p.header__category
+          i.fa.fa-tag>
+          em = current_page.data.category

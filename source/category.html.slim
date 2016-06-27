@@ -1,0 +1,11 @@
+---
+hero_image: mac-glasses.jpeg
+pageable : true
+---
+div role="main"
+
+  = partial "partials/header", locals: { title: category }
+
+  section
+    .wrapper
+      = partial "partials/articles_list"

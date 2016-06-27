@@ -1,0 +1,55 @@
+// ============================================================================
+// Footer
+// ============================================================================
+
+// Generic styles for the footer
+// ------------------------------------
+.footer{
+
+  width: 100%;
+  background-color: $color-primary;
+  text-align: center;
+  clear: both;
+  padding: 2em;
+
+  &__content{
+    color:     $color-hero-heading;
+    font-size: $font-size-small;
+    padding-top: 1em;
+
+    &--social{
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__content__item{
+    margin-bottom: 1.5em;
+
+    @include media($medium){
+      display: inline-block;
+      padding: 0 1em;
+    }
+
+    &--social{
+      margin-bottom: 1.5em;
+      display: inline-block;
+      padding: 0 1em;
+    }
+  }
+
+  &__copyright{
+    padding-bottom: em(24,14);
+    font-size: $font-size-tiny;
+    color: $color-hero-heading;
+  }
+
+  &__icon{
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    line-height: 2em !important;
+    border: 1px solid $color-link;
+  }
+}

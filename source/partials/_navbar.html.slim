@@ -1,0 +1,15 @@
+.wrapper
+  nav role="navigation"
+    .fat-nav
+      .fat-nav__wrapper
+        ul
+          li
+            = link_to "Accueil", "/"
+          li
+            = link_to "Blog", "/blog.html"
+          - if current_page.url == "/"
+            li
+              = link_to "Contact", "#contact", :class => "scroll"
+          - else
+            li
+              = link_to "Contact", "/#contact"

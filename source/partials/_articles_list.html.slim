@@ -1,0 +1,58 @@
+/ Variables for pagination
+- locals      = current_resource.metadata[:locals]
+- prev_page   = locals['prev_page']
+- page_number = locals['page_number']
+- num_pages   = locals['num_pages']
+- next_page   = locals['next_page']
+- per_page    = locals['per_page']
+
+/ Get articles
+- if current_page.path.include?("categories")
+  - category        = page_articles.first.data.category
+  - cat_articles    = blog.articles.select{ |a| a.data.category == category }
+  - page_articles   = cat_articles.slice((page_number - 1) * per_page, per_page)
+- else
+  - page_articles   = blog.articles.slice((page_number - 1) * per_page, per_page)
+
+.metas--categories
+  span.metas__label Catégories :
+  ul.metas__list
+    li.metas__list-item
+      = link_to "SEO on-site", category_path("seo-on-site"), :class => (is_page_active('/blog/categories/seo-on-site/') + " metas__link")
+    li.metas__list-item
+      = link_to "Administration serveur", category_path("administration-serveur"), :class => (is_page_active('/blog/categories/administration-serveur/') + " metas__link")
+    li.metas__list-item
+      = link_to "Scripts SEO", category_path("scripts-seo"), :class => (is_page_active('/blog/categories/scripts-seo/') + " metas__link")
+    li.metas__list-item
+      = link_to "Outils SEO", category_path("outils-seo"), :class => (is_page_active('/blog/categories/outils-seo/') + " metas__link")
+    li.metas__list-item
+      = link_to "Sémantique", category_path("semantique"), :class => (is_page_active('/blog/categories/semantique/') + " metas__link")
+
+ul.blog__list
+  - page_articles.each_with_index do |article, i|
+    li.blog__list__item.row
+      .blog__list__cat
+        i.fa.fa-tag>
+        = article.data.category
+      .blog__list__content
+        h2.blog__list__title
+          = link_to article.title, article, class: "blog__list__link"
+        p.metas__inline
+          i.fa.fa-calendar>
+          = pretty_date(article.date)
+        p = article.data.excerpt
+
+/ Show links if needed
+- if num_pages > 1
+  section.blog__pagination
+    nav.blog__pagination__links role= "navigation"
+      - if prev_page
+        = link_to '< Précédent ', prev_page
+        ' &bull;
+      span
+        ' Page #{page_number}
+        ' / #{num_pages}
+      - if next_page
+        ' &bull;
+        = link_to 'Suivant >', next_page
+

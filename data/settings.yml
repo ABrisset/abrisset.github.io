@@ -1,0 +1,19 @@
+site:
+  title: Antoine Brisset
+  title_suffix: " &bull; Antoine Brisset"
+  url: "http://www.antoine-brisset.com"
+
+author:
+  name: Antoine Brisset
+  address: Marquette-lez-Lille
+  phone: 06 12 71 82 78
+  email: contact@antoine-brisset.com
+
+social:
+  twitter: https://twitter.com/abrisset
+  github: https://github.com/ABrisset
+  google_plus: http://plus.google.com/112811217796192792405?rel=author
+
+google_analytics:
+  tracking_code: UA-22409932-2
+  gtm_id: GTM-NKG6T7

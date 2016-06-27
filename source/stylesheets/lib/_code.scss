@@ -1,0 +1,23 @@
+code{
+  margin: 0 0.1em;
+  padding: 0.1em 0.2em;
+  border: 1px solid #d5d6d7;
+  background-color: #fcfcfc;
+  border-radius: 0.2em;
+}
+
+pre{
+
+  margin: 0 0 1.3333333333333333em 0;
+  padding: 0.5em 1em;
+  border: 1px solid #d5d6d7;
+  background-color: #fcfcfc;
+  border-radius: 0.4em;
+
+  code{
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+  }
+}

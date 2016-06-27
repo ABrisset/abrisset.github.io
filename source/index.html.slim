@@ -1,0 +1,107 @@
+---
+title: Antoine Brisset
+title_seo: Consultant SEO & Google Adwords - Lille (Nord)
+description: Consultant en référencement naturel et payant avec + de 5 ans d'expérience. Je vous donne les clés pour améliorer votre visibilité sur Google.
+slogan: Consultant SEO & webmarketing<br/ > Indépendant
+---
+
+javascript:
+  new WOW().init();
+
+div role="main"
+  = partial "partials/header"
+
+section.section#testimonial
+  .wrapper
+    .testimonial
+      = image_tag "images/home/photo_antoine.jpg", :class => "mod__img mod__img--rounded testimonial__img", :style => "width: 150px"
+      h2.testimonial__heading Améliorons votre visibilité sur Google
+      p.testimonial__message Consultant en référencement depuis 2010, d'abord en agence puis aujourd'hui en freelance, j'aide les entreprises à définir la stratégie de référencement naturel (SEO) et/ou de référencement payant (SEA) la mieux adaptée à leur activité et à leur environnement concurrentiel.
+
+section.section.section--big.section--big--adwords
+  .wrapper
+    .section__content
+      h3.section__title.section__title--bg--left Certifié Google Adwords
+      p Je suis titulaire de la certification Google Adwords depuis 2015. Définition de votre budget, création de vos campagnes et suivi de vos performances, je gère votre présence dans les résultats sponsorisés avec comme principal objectif de maximiser votre ROI.
+      = link_to "Me contacter", "#contact", :class => "section__link--bg scroll"
+
+section.section
+  .wrapper
+    .section__content--centered
+      h2.section__title Référencement naturel
+    .section
+      .mod
+        = image_tag "images/svg/wheel.svg", :class => "mod__img"
+        h3 Audit technique
+        p Assurez-vous que les fondations de votre site soient solides avant d'attaquer la première page de Google. Analyse du comportement de Googlebot sur l'ensemble de vos pages (logs), étude structurelle (crawl), je détecte les facteurs bloquants, identifie les axes de progression et priorise les actions à mettre en place sur votre site internet pour le rendre plus performant.
+      .mod
+        = image_tag "images/svg/file.svg", :class => "mod__img"
+        h3 Aide à la rédaction
+        p Pour séduire Google et convaincre vos visiteurs, vous devez proposer sur votre site un contenu de qualité. Mes outils sémantiques scannent les pages de résultats Google de votre thématique, en extraient des corpus de mots-clés et y appliquent des traitements automatiques de manière à vous fournir des guides d'aide à la rédaction précis, qui viendront enrichir intelligemment vos pages.
+      .mod
+        = image_tag "images/svg/rocket.svg", :class => "mod__img"
+        h3 Accompagnement
+        p Vous avez corrigé les problèmes structurels de votre site et rédigé un contenu optimisé ? Bravo, vous avez franchi la 1ère étape. Pour propulser votre site, il faut maintenant le rendre populaire aux yeux des moteurs de recherche en créant autour de lui un écosystème de liens pertinent. Je vous conseille sur la stratégie de netlinking à mettre en place, pour des résultats concrets et durables.
+
+section.section.section--big.section--big--ruby
+  .wrapper
+    .section__content.section__content--right
+      h3.section__title.section__title--bg--right Développeur Ruby
+      p J'ai appris à utiliser le framework Ruby on Rails en autodidacte et je mets aujourd'hui à profit ces compétences à la fois dans mon expertise SEO technique, via le développement d'outils personnalisés (scraper, crawler, analyseur sémantique), mais également dans le développement de projets personnels tels que le moteur de recherche de food trucks <em>fousdetrucks.com</em>
+      = link_to "Découvrir Fous De Trucks", "https://www.fousdetrucks.com",  :class => "section__link--bg", :target => "_blank"
+
+section.section
+  .wrapper
+    .section__content--centered
+      h2.section__title Références client
+    .section
+      .mod--large
+        = link_to "#{image_tag "images/home/phildar.jpg", :class => "mod__img mod__img--rounded", :alt => "Phildar - Boutique en ligne de vente de laine"}", "http://www.phildar.fr", :target => "_blank"
+      .mod--large
+        = link_to "#{image_tag "images/home/potion_magic.png", :class => "mod__img mod__img--rounded", :alt => "Potion Magic - Agence événementielle"}", "http://www.potion-magic.com", :target => "_blank"
+      .mod--large
+        = link_to "#{image_tag "images/home/tao.jpg", :class => "mod__img mod__img--rounded", :alt => "Tape à l'oeil - Vêtements enfants"}", "http://www.abrimmo.fr", :target => "_blank"
+      .mod--large
+        = link_to "#{image_tag "images/home/ospao.png", :class => "mod__img mod__img--rounded", :alt => "OspaO - Centre bien-être à Lille"}", "http://www.ospao.fr", :target => "_blank"
+
+section.section.section--big.section--big--ninja
+  .wrapper
+    .section__content--centered
+      h3.section__title--bg--quote
+        i.fa.fa-quote-left>
+        ' Besoin d'un diagnostic SEO ? Confiez-moi votre site, faisons parler mes outils et analysons la donnée !
+        i.fa.fa-quote-right
+
+section.section#contact
+  .wrapper
+    .section__content--centered
+      h2.section__title Contact
+      br
+    .section__content--large
+      div style="text-align: center"
+        p Vous avez une problématique SEO ? Vous souhaitez améliorer vos résultats sur Google Adwords ? Parlons-en !
+        br
+      = form_tag "//formspree.io/contact@antoine-brisset.com", method: "post" do
+
+        input type="hidden" name="_next" value="//www.antoine-brisset.com/thanks/"
+        input type="hidden" name="_subject" value="Contact from www.antoine-brisset.com"
+
+        - field_set_tag do
+
+          p
+            = label_tag :prenom
+            = text_field_tag :prenom
+          p
+            = label_tag :nom
+            = text_field_tag :nom, :required => "required"
+          p
+            = label_tag :email
+            = text_field_tag :_replyto, :required => "required"
+          p
+            = label_tag :telephone
+            = telephone_field_tag :telephone
+          p
+            = label_tag :message
+            = text_area_tag :message, :required => "required"
+          p.btn__wrapper
+            = submit_tag "Envoyer", class: "btn btn--fill"
