@@ -171,7 +171,7 @@ def show
 end
 ```
 
-Automatiquement, cette méthode va fixer la valeur de l'en-tête Last-Modified et déterminer, pour chaque requête, si un code 304 Not Modified doit être renvoyé : si la date de dernière modification de l'objet est inférieure à la date stipulée dans le `If-Modified-Since`, la requête est "fresh" (on renvoie un code 304 avec une réponse partielle), sinon elle est "stale" (on renvoie un code 200 avec la réponse complète).
+Automatiquement, cette méthode va fixer la valeur de l'en-tête `Last-Modified` et déterminer, pour chaque requête, si un code 304 Not Modified doit être renvoyé : si la date de dernière modification de l'objet est inférieure à la date stipulée dans le `If-Modified-Since`, la requête est "fresh" (on renvoie un code 304 avec une réponse partielle), sinon elle est "stale" (on renvoie un code 200 avec la réponse complète).
 
 
 J'espère que ces deux articles sur l'optimisation SEO de votre application Ruby on Rails vous auront plu. N'hésitez pas si vous avez des questions ou si vous souhaitez que je creuse un sujet en particulier.
