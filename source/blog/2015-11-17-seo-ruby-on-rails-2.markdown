@@ -160,9 +160,9 @@ Et voilà, il n'y a plus qu'à tester ! Bien entendu, vous pouvez vous inspirer 
 
 ## Booster votre temps de chargement avec Last-Modified
 
-Petit bonus : si vous souhaitez améliorer vos temps de réponse et ainsi augmenter le nombre de pages crawlées par Google à l'intérieur d'une même fenêtre de crawl, voici comment gérer facilement vos requêtes HTTP conditionnelles pour renvoyer un maximum de codes 304 Not Modified. Car, oui, [Google utilise l'en-tête HTTP If-Modified-Since:](https://support.google.com/webmasters/answer/35769?hl=fr) dans ses requêtes et il serait dommage de ne pas en tirer profit.
+Petit bonus : si vous souhaitez améliorer vos temps de réponse et ainsi augmenter le nombre de pages crawlées par Google à l'intérieur d'une même fenêtre de crawl, voici comment gérer facilement vos requêtes HTTP conditionnelles pour renvoyer un maximum de codes 304 Not Modified. Car, oui, [Google utilise l'en-tête HTTP If-Modified-Since](https://support.google.com/webmasters/answer/35769?hl=fr) dans ses requêtes et il serait dommage de ne pas en tirer profit.
 
-Reprenons l'exemple de notre blog et du modèle `Article`. Nous allons utiliser la méthode `fresh_when` suivie de l'argument `last_modified:` dont la valeur correspondra à la date de dernière mise à jour de l'objet (`updated_at`), ce qui donne :
+Reprenons l'exemple de notre blog et du modèle `Article`. Nous allons utiliser la méthode `fresh_when` suivie de l'argument `last_modified` dont la valeur correspondra à la date de dernière mise à jour de l'objet (`updated_at`), ce qui donne :
 
 ``` ruby
 def show
@@ -171,7 +171,7 @@ def show
 end
 ```
 
-Automatiquement, cette méthode va fixer la valeur de l'en-tête Last-Modified et déterminer, pour chaque requête, si un code 304 Not Modified doit être renvoyé : si la date de dernière modification de l'objet est inférieure à la date stipulée dans le `If-Modified-Since:`, la requête est "fresh" (on renvoie un code 304 avec une réponse partielle), sinon elle est "stale" (on renvoie un code 200 avec la réponse complète).
+Automatiquement, cette méthode va fixer la valeur de l'en-tête Last-Modified et déterminer, pour chaque requête, si un code 304 Not Modified doit être renvoyé : si la date de dernière modification de l'objet est inférieure à la date stipulée dans le `If-Modified-Since`, la requête est "fresh" (on renvoie un code 304 avec une réponse partielle), sinon elle est "stale" (on renvoie un code 200 avec la réponse complète).
 
 
 J'espère que ces deux articles sur l'optimisation SEO de votre application Ruby on Rails vous auront plu. N'hésitez pas si vous avez des questions ou si vous souhaitez que je creuse un sujet en particulier.
