@@ -173,7 +173,7 @@ end
 
 Automatiquement, cette méthode va fixer la valeur de l'en-tête `Last-Modified` et déterminer, pour chaque requête, si un code 304 Not Modified doit être renvoyé : si la date de dernière modification de l'objet est inférieure à la date stipulée dans le `If-Modified-Since`, la requête est "fresh" (on renvoie un code 304 avec une réponse partielle), sinon elle est "stale" (on renvoie un code 200 avec la réponse complète).
 
-Pour vérifier la bonne implémentation de la 304, vous pouvez lancer utiliser cURL en ligne de commande (changez la date et l'URL en fonction de ce que vous voulez tester):
+Pour vérifier la bonne implémentation de la 304, vous pouvez utiliser cURL en ligne de commande (changez la date et l'URL en fonction de ce que vous voulez tester):
 
 ``` console
 curl -I -H "If-Modified-Since: Thu, 20 Jul 2016 21:00:00 GMT" http://www.antoine-brisset.com
