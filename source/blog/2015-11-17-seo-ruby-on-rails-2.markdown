@@ -6,7 +6,7 @@ date: 2015-11-17 10:46:00 +0100
 hero_image: train.jpg
 thumbnail:
 category: "SEO On-site"
-excerpt: "Dans le <a href='http://www.antoine-brisset.com/blog/seo-ruby-on-rails-1/'>1er article sur les bonnes pratiques SEO sous Ruby on Rails</a>, nous avons vu comment avoir des URL propres, optimiser ses balises title & meta et éditer facilement son fichier robots.txt. Voyons aujourd'hui comment forcer un domaine canonique (www), construire un fichier sitemap.xml et définir une page d'erreur 404 personnalisée."
+excerpt: "Dans le <a href='http://www.antoine-brisset.com/blog/seo-ruby-on-rails-1/'>1er article sur les bonnes pratiques SEO sous Ruby on Rails</a>, nous avons vu comment avoir des URL propres, optimiser ses balises title & meta et éditer facilement son fichier robots.txt. Voyons aujourd'hui comment forcer un domaine canonique (www), construire un fichier sitemap.xml, définir une page d'erreur 404 personnalisée et utiliser le cache HTTP."
 author:
 alias: bonnes-pratiques-seo-sous-ruby-on-rails-2eme-partie/
 ---
