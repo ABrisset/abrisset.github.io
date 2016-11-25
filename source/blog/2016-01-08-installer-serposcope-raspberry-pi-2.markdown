@@ -66,7 +66,7 @@ wget https://serposcope.serphacker.com/download/2.0.0/serposcope_2.0.0_all.deb
 Installez-le :
 
 ``` console
-sudo dpkg -i serposcope.deb
+sudo dpkg -i serposcope_2.0.0_all.deb
 ```
 
 Editez ensuite le fichier de conf de Serposcope de façon à ce qu'il puisse localiser correctement `JAVA_HOME`. Celui-ci devrait se trouver dans `/etc/default/serposcope.conf` :

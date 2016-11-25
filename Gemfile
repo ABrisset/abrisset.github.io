@@ -23,7 +23,7 @@ gem "middleman-livereload", "~> 3.1.0"
 gem 'slim', '~> 3.0.2'
 gem 'bourbon'
 gem 'neat'
-gem "jquery-middleman"
+gem 'jquery-middleman'
 
 # RSS
 gem 'builder'
