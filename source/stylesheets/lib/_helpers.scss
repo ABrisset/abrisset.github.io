@@ -3,13 +3,13 @@
   color: $color-hero-heading;
 }
 
-@mixin ornement($margin-left: auto, $margin-right: auto, $background-color: $color-hero-heading){
+@mixin ornement($margin-left: auto, $margin-right: auto, $gradient_from: $color-hero-heading, $gradient_to: $color-link){
   display: block;
-  height: rem(2);
+  height: rem(1);
   margin: rem(19) $margin-right rem(22.5) $margin-left;
   width: rem(56);
   content: "";
-  background-color: $background-color;
+  background: linear-gradient(to right, $gradient_from 0%, $gradient_to 100%);
 }
 
 %white-radius{

@@ -11,7 +11,9 @@
     header.header--home
       .wrapper
         h1.header--home__title.wow.fadeIn data-wow-delay="0.5s" data-wow-iteration="1"
-          = title
+          span.header--home__title--firstname
+            => current_page.data.first_name
+          = current_page.data.name
         p.header__baseline.wow.fadeIn data-wow-delay="1s" data-wow-iteration="1"
           = current_page.data.slogan
       .header__bottom

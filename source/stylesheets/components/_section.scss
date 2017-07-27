@@ -152,7 +152,7 @@
     @extend %h-xxlarge;
 
     &:after{
-      @include ornement(auto, auto, $color-primary);
+      @include ornement(auto, auto, $color-primary, $color-primary);
     }
   }
 
@@ -164,7 +164,7 @@
     @extend %title-bg;
 
     &:after{
-      @include ornement(0, auto, $color-hero-heading);
+      @include ornement(0, auto, $color-hero-heading, $color-hero-heading);
     }
   }
 
@@ -172,7 +172,7 @@
     @extend %title-bg;
 
     &:after{
-      @include ornement(auto, 0, $color-hero-heading);
+      @include ornement(auto, 0, $color-hero-heading, $color-hero-heading);
     }
   }
 }

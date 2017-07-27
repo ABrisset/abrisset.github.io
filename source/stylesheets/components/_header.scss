@@ -35,6 +35,7 @@
   &__baseline{
     width: 50%;
     margin: auto;
+    font-style: italic;
   }
 
   &__bottom{
@@ -44,6 +45,10 @@
     width: 100%;
     animation: bounce 4s infinite;
     z-index: 1;
+
+    a{
+      color: $color-hero-heading;
+    }
   }
 
   &__category{
@@ -76,6 +81,10 @@
 
     &:after{
       @include ornement;
+    }
+
+    &--firstname{
+      font-weight: 100;
     }
   }
 }

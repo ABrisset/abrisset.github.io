@@ -6,7 +6,7 @@ $btn-default-font-size : 1em;
 $btn-padding-horizontal : 1em;
 $btn-padding-vertical : 0.5em;
 $btn-margin-bottom: 1.5em;
-$btn-background-color: #73b819;
+$btn-background-color: $color-link;
 
 %btn{
   display: inline-block;
@@ -77,8 +77,8 @@ input[type="submit"]{
 
 .btn--fill{
   background-color: $btn-background-color;
-  font-size: $font-size-large;
-  box-shadow: 0px em(2, $font-size-large) 0px darken($btn-background-color, 10%);
+  font-size: $font-size-medium;
+  box-shadow: 0px em(2, $font-size-medium) 0px darken($btn-background-color, 10%);
 
   &:hover{
     background-color: darken($btn-background-color,10%);
