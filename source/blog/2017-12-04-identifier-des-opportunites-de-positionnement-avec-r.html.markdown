@@ -94,7 +94,7 @@ my_keywords <- filter(my_keywords, !grepl("ma marque",my_keywords$Keyword))
 
 ## Dernière étape : l'anti join
 
-Il ne reste plus qu'à réaliser un anti join, c'est-à-dire sélectionner dans le data frame des concurrents les mots-clés qui n'ont aucun "match" dans  mon data frame. Un peu comme un left outer join en SQL, avec un select sur les valeurs NULL.
+Il ne reste plus qu'à réaliser un anti join, c'est-à-dire sélectionner dans le data frame des concurrents les mots-clés qui n'ont aucun "match" dans mon data frame. Un peu comme un left outer join en SQL, avec un select sur les valeurs null.
 
 ``` r
 opportunities <- anti_join(competitor_keywords, my_keywords, by="Keyword")
@@ -105,6 +105,19 @@ Je peux enfin, en utilisant `arrange`, trier les mots-clés par ordre de volume 
 ``` r
 opportunities <- arrange(opportunities, desc(Volume))
 write.csv(opportunities,"opportunities.csv")
+```
+
+Voici ce que l'on obtient, par exemple ici avec un client dans le domaine du tricot.
+
+``` r
+head(opportunities)
+             Keyword Volume
+1             alaska  33100
+2           broderie   9900
+3              teddy   6600
+4               fils   5400
+5 machine à tricoter   3600
+6        blog tricot   3600
 ```
 
 Et voilà, encore un bel exemple de traitement SEO avec R :)
