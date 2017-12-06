@@ -8,4 +8,5 @@ thumbnail:
 category:
 excerpt:
 author:
+slug:
 ---

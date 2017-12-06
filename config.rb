@@ -47,6 +47,9 @@
 #   end
 # end
 
+::Rack::Mime::MIME_TYPES[''] = 'text/html'
+
+require 'builder'
 require 'slim'
 require "lib/build_cleaner.rb"
 
@@ -72,8 +75,8 @@ activate :blog do |blog|
   # blog.year_link = "{year}.html"
   # blog.month_link = "{year}/{month}.html"
   # blog.day_link = "{year}/{month}/{day}.html"
-    blog.default_extension = ".markdown"
-    blog.new_article_template = "source/new-article.markdown"
+  # blog.default_extension = ".markdown"
+    blog.new_article_template = File.expand_path("source/new-article.markdown", File.dirname(__FILE__))
 
   # blog.tag_template = "tag.html"
   # blog.calendar_template = "calendar.html"
@@ -90,10 +93,6 @@ activate :blog do |blog|
         template: '/category.html'
       }
     }
-end
-
-activate :sitemap_ping do |config|
-  config.host = "#{data.settings.site.url}"
 end
 
 page "/blog/feed.xml", layout: false
@@ -188,14 +187,11 @@ configure :build do
     }
   end
 
-  # Sitemap
-  activate :sitemap, hostname: data.settings.site.url
-
 end
 
 # Deploy
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.deploy_method = :git
   deploy.branch = 'master'
   deploy.build_before = true
 end
@@ -225,10 +221,13 @@ activate :gzip
 activate :i18n
 
 # Code highlighting
-activate :rouge_syntax
+activate :syntax
 
 # Directory indexes
 activate :directory_indexes
+
+# Javascript
+activate :sprockets
 
 # Disqus
 activate :disqus do |d|
