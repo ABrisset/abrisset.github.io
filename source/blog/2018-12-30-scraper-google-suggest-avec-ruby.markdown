@@ -6,12 +6,12 @@ date: 2018-12-30 15:52:15 +0100
 hero_image:
 thumbnail:
 category: "Scripts SEO"
-excerpt: Google Suggest, tous les référenceurs connaissent. C'est souvent un des points de départ d'un audit de mots-clés. Plusieurs outils (payants) existent aujourd'hui pour récupérer ces mots-clés. 
+excerpt: Google Suggest, tous les référenceurs connaissent. C'est souvent un des points de départ d'un audit de mots-clés. Plusieurs outils (payants) existent aujourd'hui pour récupérer ces mots-clés. Je vous propose ici un script Ruby gratuit.
 author:
 slug: /google-suggest-scraper
 ---
 
-Je vous propose ici un script Ruby gratuit qui va vous faciliter la tâche lors de l'extraction de ces mots-clés Google Suggest.
+Ce petit outil va vous faciliter la tâche lors de l'extraction des mots-clés Google Suggest. Lancez-le, attendez quelques secondes et récupérez automatiquement toutes les suggestions dans un fichier .txt !
 
 ## Quelle différence par rapport aux outils et scripts existants ?
 
