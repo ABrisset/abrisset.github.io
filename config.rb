@@ -75,7 +75,7 @@ activate :blog do |blog|
   # blog.year_link = "{year}.html"
   # blog.month_link = "{year}/{month}.html"
   # blog.day_link = "{year}/{month}/{day}.html"
-  # blog.default_extension = ".markdown"
+    blog.default_extension = ".html.markdown"
     blog.new_article_template = File.expand_path("source/new-article.markdown", File.dirname(__FILE__))
 
   # blog.tag_template = "tag.html"
