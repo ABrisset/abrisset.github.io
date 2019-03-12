@@ -10,9 +10,9 @@
     color: $color-hero-heading;
   }
 
-  &--big--adwords:after{
+  &--big--data:after{
     content: "";
-    background-image: url("../images/backgrounds/small/google.jpg");
+    background-image: url("../images/backgrounds/small/data.jpg");
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -24,11 +24,11 @@
     z-index: -1;
 
     @media screen and (min-width: 25em){
-      background-image: url("../images/backgrounds/medium/google.jpg");
+      background-image: url("../images/backgrounds/medium/data.jpg");
     }
 
     @media screen and (min-width: 50em){
-      background-image: url("../images/backgrounds/google.jpg");
+      background-image: url("../images/backgrounds/data.jpg");
     }
   }
 
