@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog SEO &amp; Ruby</title>
+  <subtitle>Antoine Brisset</subtitle>
+  <id>http://www.antoine-brisset.com/blog</id>
+  <link href="http://www.antoine-brisset.com/blog"/>
+  <link href="http://www.antoine-brisset.com/blog/feed.xml" rel="self"/>
+  <updated>2018-12-30T15:52:15+01:00</updated>
+  <author>
+    <name>Antoine Brisset</name>
+  </author>
+  <entry>
+    <title>Scraper Google Suggest avec Ruby</title>
+    <link rel="alternate" href="http://www.antoine-brisset.com/blog/google-suggest-scraper/"/>
+    <id>http://www.antoine-brisset.com/blog/google-suggest-scraper/</id>
+    <published>2018-12-30T15:52:15+01:00</published>
+    <updated>2018-12-31T11:46:32+01:00</updated>
+    <author>
+      <name>Antoine Brisset</name>
+    </author>
+    <summary type="html">Google Suggest, tous les référenceurs connaissent. C'est souvent un des points de départ d'un audit de mots-clés. Plusieurs outils (payants) existent aujourd'hui pour récupérer ces mots-clés. Je vous propose ici un script Ruby gratuit.</summary>
+  </entry>
+  <entry>
+    <title>Récupérer les paramètres d'une liste d'URLs avec Ruby</title>
+    <link rel="alternate" href="http://www.antoine-brisset.com/blog/params-url-ruby/"/>
+    <id>http://www.antoine-brisset.com/blog/params-url-ruby/</id>
+    <published>2018-06-07T14:33:56+02:00</published>
+    <updated>2018-06-19T16:51:41+02:00</updated>
+    <author>
+      <name>Antoine Brisset</name>
+    </author>
+    <summary type="html">Manipuler de longues listes de mots-clés ou de longues listes d'URL fait partie du quotidien d'un référenceur. Et quand on a des traitements récurrents à faire sur ces fichiers, on cherche souvent à automatiser. Un exemple ici avec l'extraction des paramètres depuis une liste d'URLs.</summary>
+  </entry>
+  <entry>
+    <title>Identifier des opportunités de positionnement avec R et Yooda Insight</title>
+    <link rel="alternate" href="http://www.antoine-brisset.com/blog/opportunites-mots-cles-r/"/>
+    <id>http://www.antoine-brisset.com/blog/opportunites-mots-cles-r/</id>
+    <published>2017-12-04T17:18:42+01:00</published>
+    <updated>2017-12-06T11:47:05+01:00</updated>
+    <author>
+      <name>Antoine Brisset</name>
+    </author>
+    <summary type="html">Rechercher des mots-clés est une tâche récurrente en SEO, qui nécessite souvent de manipuler de gros volumes de données. Cela peut vite devenir très chronophage si on n'automatise pas un minimum. Si j'avais jusqu'ici l'habitude d'utiliser MySQL pour effectuer des traitements sur des fichiers de mots-clés volumineux, je me tourne désormais de plus en en plus vers R.</summary>
+  </entry>
+  <entry>
+    <title>Tronquer un contenu avec Ruby</title>
+    <link rel="alternate" href="http://www.antoine-brisset.com/blog/truncate-ruby/"/>
+    <id>http://www.antoine-brisset.com/blog/truncate-ruby/</id>
+    <published>2017-09-01T18:26:00+02:00</published>
+    <updated>2017-12-06T09:50:26+01:00</updated>
+    <author>
+      <name>Antoine Brisset</name>
+    </author>
+    <summary type="html">Tronquer un contenu textuel est un besoin récurrent, que ce soit sur un blog ou sur un site e-commerce : extrait d'un article, description courte d'un produit, etc. Souvent, cette manipulation est nécessaire pour éviter le contenu dupliqué. Je vous propose ici un petit helper qui vous fera gagner du temps si le site est développé avec Ruby.</summary>
+  </entry>
+  <entry>
+    <title>Analyser les title d'une requête avec R</title>
+    <link rel="alternate" href="http://www.antoine-brisset.com/blog/title-ngrams-r/"/>
+    <id>http://www.antoine-brisset.com/blog/title-ngrams-r/</id>
+    <published>2017-05-26T17:17:47+02:00</published>
+    <updated>2017-12-06T09:50:37+01:00</updated>
+    <author>
+      <name>Antoine Brisset</name>
+    </author>
+    <summary type="html">Le langage R a le vent en poupe dans la communauté SEO depuis quelques mois, voire quelques années. Après avoir lu les très bons articles de &lt;a href='https://data-seo.fr/'&gt;Vincent Terrasi&lt;/a&gt; et de &lt;a href='http://gameofseo.fr/'&gt;Grégory Florin&lt;/a&gt; sur le sujet, je me suis lancé il y a peu dans l'apprentissage de ce langage.</summary>
+  </entry>
+  <entry>
+    <title>Installer un certificat SSL sur un site hébergé par Github Pages</title>
+    <link rel="alternate" href="http://www.antoine-brisset.com/blog/ssl-github-pages/"/>
+    <id>http://www.antoine-brisset.com/blog/ssl-github-pages/</id>
+    <published>2016-11-04T19:41:24+01:00</published>
+    <updated>2017-12-06T09:50:49+01:00</updated>
+    <author>
+      <name>Antoine Brisset</name>
+    </author>
+    <summary type="html">Google pousse les webmasters du monde entier à utiliser https par défaut pour leur site web. Si vous avez un ou plusieurs sites hébergés sur Github Pages avec votre propre nom de domaine, vous recherchez sûrement un moyen d'installer un certificat SSL. Je vous propose ici une méthode rapide et gratuite.</summary>
+  </entry>
+  <entry>
+    <title>Clustering de mots-clés : un exemple avec Gephi</title>
+    <link rel="alternate" href="http://www.antoine-brisset.com/blog/clustering-gephi/"/>
+    <id>http://www.antoine-brisset.com/blog/clustering-gephi/</id>
+    <published>2016-09-27T18:50:00+02:00</published>
+    <updated>2017-12-06T09:50:58+01:00</updated>
+    <author>
+      <name>Antoine Brisset</name>
+    </author>
+    <summary type="html">La notion de clusterisation est à nouveau abordée sur le blog, mais sous un autre angle. J'ai en effet décidé d'explorer les fonctionnalités de Gephi pour générer la cartographie d'un univers sémantique. L'objectif est de visualiser à la fois l'intérêt d'un mot-clé (volume de recherche) et la façon dont il est connecté aux autres mots-clés (similarité sémantique)</summary>
+  </entry>
+  <entry>
+    <title>Clustering de mots-clés : un exemple avec K-means &amp; Ruby</title>
+    <link rel="alternate" href="http://www.antoine-brisset.com/blog/clustering-ruby-k-means/"/>
+    <id>http://www.antoine-brisset.com/blog/clustering-ruby-k-means/</id>
+    <published>2016-06-02T15:45:00+02:00</published>
+    <updated>2017-12-06T09:51:08+01:00</updated>
+    <author>
+      <name>Antoine Brisset</name>
+    </author>
+    <summary type="html">Le machine learning étant un des nouveaux sujets SEO du moment, j'ai récemment commencé à approfondir le sujet et à mettre les mains dans le cambouis, dans le cadre d'une problématique bien précise : la catégorisation de mots-clés.</summary>
+  </entry>
+  <entry>
+    <title>Analyser les données Search Console avec Google Sheets &amp; Blockspring</title>
+    <link rel="alternate" href="http://www.antoine-brisset.com/blog/search-console-google-sheets-blockspring/"/>
+    <id>http://www.antoine-brisset.com/blog/search-console-google-sheets-blockspring/</id>
+    <published>2016-03-29T20:12:04+02:00</published>
+    <updated>2017-12-06T09:51:33+01:00</updated>
+    <author>
+      <name>Antoine Brisset</name>
+    </author>
+    <summary type="html">Google Sheets est un excellent outil que j'utilise beaucoup dans mon activité SEO : pour générer des reporting avec l'API analytics, pour trier des mots-clés, ou même pour extraire les résultats Google sur une requête (même s'il semblerait que cela ne fonctionne plus depuis quelques semaines). Couplé à l'add-on Blockspring, les possibilités sont multiples.</summary>
+  </entry>
+  <entry>
+    <title>Les pièges à éviter lors de l'analyse sémantique</title>
+    <link rel="alternate" href="http://www.antoine-brisset.com/blog/seo-campus-lille-2016/"/>
+    <id>http://www.antoine-brisset.com/blog/seo-campus-lille-2016/</id>
+    <published>2016-03-07T10:48:44+01:00</published>
+    <updated>2017-12-06T09:51:43+01:00</updated>
+    <author>
+      <name>Antoine Brisset</name>
+    </author>
+    <summary type="html">Le 4 février dernier avait lieu à l'Espace Inkermann une nouvelle édition du SEO Campus Lille. Au programme : un peu de R, de webspam ou encore d'Adwords mais aussi et surtout des échanges très intéressants avec les participants. Pour ma part, j'ai eu le plaisir d'y intervenir pour une conférence sur les pièges à éviter lors de l'analyse sémantique.</summary>
+  </entry>
+  <entry>
+    <title>Installer Serposcope sur un Raspberry Pi 2</title>
+    <link rel="alternate" href="http://www.antoine-brisset.com/blog/installer-serposcope-raspberry-pi-2/"/>
+    <id>http://www.antoine-brisset.com/blog/installer-serposcope-raspberry-pi-2/</id>
+    <published>2016-01-08T18:24:55+01:00</published>
+    <updated>2017-12-06T09:52:00+01:00</updated>
+    <author>
+      <name>Antoine Brisset</name>
+    </author>
+    <summary type="html">Ayant récemment fait l'acquisition d'un &lt;a href='http://www.amazon.fr/Raspberry-Pi-Quad-Core-Starter/dp/B00T7KW3Y0/ref=sr_1_6?s=computers&amp;ie=UTF8&amp;qid=1452271852&amp;sr=1-6&amp;tag=antoine-brisset-21'&gt;Raspberry Pi 2&lt;/a&gt;, je commence petit à petit à en découvrir tout le potentiel, notamment en termes d'automatisation. S'agissant d'une machine tournant sous un OS dérivé de Debian, Raspbian, elle permet de faire tout un tas de choses amusantes, comme par exemple du suivi de positionnement avec &lt;a href='https://serposcope.serphacker.com/fr/'&gt;Serposcope&lt;/a&gt;, un outil open source développé par Serphacker (au passage, merci à lui !). Je vous explique ici comment l'installer sur votre machine...</summary>
+  </entry>
+</feed>

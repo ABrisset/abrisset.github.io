@@ -1,0 +1,1 @@
+$(document).ready(function(){function i(){windowHeight=$(window).innerHeight(),$(".section--home").css("height",windowHeight)}i(),$(window).resize(function(){i()})});
