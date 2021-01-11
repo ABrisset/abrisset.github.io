@@ -22,7 +22,7 @@ gem 'slim'
 gem 'bourbon'
 gem 'neat', '~> 1.8'
 gem 'jquery-middleman'
-gem 'redcarpet', '~> 3.3', '>= 3.3.3'
+gem 'redcarpet', '~> 3.5'
 
 # RSS
 gem 'builder'
